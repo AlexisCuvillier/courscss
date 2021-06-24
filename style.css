@@ -1,0 +1,265 @@
+/* reset 
+* { padding:0;
+    margin: 0;
+	text-decoration:0;
+list-style-type:none;} */
+
+
+* { background-color:red;
+
+}
+
+
+
+#uniteDeMesure p:nth-child(3){
+	font-size: 10px;
+}
+
+#uniteDeMesure p:nth-child(4){
+	font-size: 2em;
+}
+#uniteDeMesure p:last-child {
+	font-size: 2rem;
+}
+
+#uniteDeMesure { background-color: grey;
+				height: 100vh ;
+ }
+ 
+ 
+ 
+ /* ****** format des couleurs ***** */
+ 
+ #formationdecouleurs p:nth-child(2){
+			color:red;
+			}
+ #formationdecouleurs p:nth-child(3){
+			color:#f00;  
+			} /* possible en #f00 ou #ff0000*/
+ #formationdecouleurs p:nth-child(4){
+			color:rgb(255,0,0);
+			}
+ #formationdecouleurs p:last-child{
+			color:rgba(255,0,0,0.5);
+			}
+			
+			
+			
+			
+/* ****** Flux et type d'affichage ****** */
+
+#affichage1,
+#affichage2,
+#affichage3{ border: 1px solid black;
+}
+
+#affichage1 p{
+border: 1px dotted black; 
+		display: inline;
+}
+
+#affichage2 p{
+border: 1px dotted black; 
+		display: block;
+}
+#affichage3 p{
+border: 1px dotted black; 
+		display: inline-block;
+}
+
+
+/* ******** Afficher masquer ****** */
+
+#affichemasquer p:nth-child(2){
+	visibility:hidden;
+}
+
+#affichemasquer p:nth-child(3){
+	opacity:0;
+}
+
+#affichemasquer p:nth-child(4){
+	display:none;
+}
+
+/* ****** Taille ****** */
+
+#taille{ background-color: #000;
+		width: 90%;
+		height: 200px;
+}
+
+#taille1 { background-color: #123;
+			max-width: 1000px;
+			min-width: 700px;
+			height: 200px; 
+}
+
+
+#marge p{background-color: red;
+		 border: 50px solid black;
+		 margin: 50px;
+		 padding: 50px;
+		 margin-left: 0;
+		 padding: 100px 200px;
+		 margin: 50px 100px 150px 200px;
+}
+
+
+#bordure p {
+	width: 200px;
+	height: 50px;
+	background-color: red;
+	text-align: center;
+	line-height: 50px;
+	/* border-width:5px;
+	border-color: red;
+	border-style :solid; */
+    border: 5px solid red ;
+	border-radius: 30px;
+}
+
+/* Dépassement de contenue */
+
+
+
+
+
+#depassement p{ text-align: justify;
+				width: 100px;
+				height: 100px;
+				overflow: auto;
+				/* overflow: hidden; */
+				}
+				
+#depassement p:last-child{ text-align: justify;
+							width: 100px;
+							height: 100px;
+							overflow: hidden;
+							word-break: break-all;
+				}
+						
+
+/* *******positonnement********/
+
+
+
+
+
+
+#positionnement div{ 
+						height:100px;
+						width: 200px;
+						border: 1px solid red; 
+}
+
+#positionnement { position:relative;}
+
+#positionnement div:nth-child(2) { float: left;}
+
+
+#positionnement div:nth-child(3) { float: right;}				
+				
+#positionnement div:nth-child(4) { position: relative;}
+
+#positionnement div:last-child { position: absolute;
+								 right: 300px;
+								 bottom :50px;
+								
+								}	
+								
+								
+#test { margin-top: 5em ;
+		position:relative;
+}
+
+								
+#arriere { position:relative;
+			margin-top: 5em ;
+		
+}		
+
+.image{  width:600px;
+		height:400px;
+		/* background-color: red;
+		background-image: url('logo.png');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat; */
+		
+		background: url('logo.png') no-repeat center /contain blue;
+
+}
+
+
+/* ******** ombre ******* */
+
+#ombre div{
+			width:70px;
+			height:35px;
+			border-radius: 25px;
+			border: 2px solid white;
+			background:red;
+			box-shadow: 5px 5px 10px blue, -5px -5px 10px blue inset ;
+}
+
+#ombre p{ 
+			color:white;
+			text-shadow: 5px 5px 10px red;
+			 
+}
+
+
+
+/* ******* interaction ******** */
+
+#interaction p:hover{ 
+				
+				color: red;
+				cursor:crosshair;
+}
+#interaction p::selection{ color:white;}
+
+
+#interaction textarea{
+	width: 200px;
+	height : 200px;
+	resize: none;
+
+}
+
+#interaction a{
+	
+	pointer-events:none;
+}
+
+/* ****** animation de transition ****** */
+
+
+#animation div{
+	width:100px;
+	height:100px;
+	background:red;
+	/* transition-property:all;
+	transition-delay:1s;
+	transition-duration:5s;
+	transition-timing-function: ease-in-out; */
+	transition: all 5s ease-in-out 1s;
+}
+
+#animation div:hover{
+	background:blue;
+	width:200px;
+	height:200px;
+	transform:rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
